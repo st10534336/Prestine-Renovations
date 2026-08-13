@@ -1,0 +1,8 @@
+Navigation bar:
+	-> home.html
+	-> about.html
+	-> services.html
+	-> gallery.html
+	-> contact.html
+
+websites must have a navigation bar (duh)
