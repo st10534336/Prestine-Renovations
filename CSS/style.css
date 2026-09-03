@@ -78,6 +78,10 @@ nav {
     flex-flow: column;
     background-color: beige;
     padding: var(--default-text-padding);
+    background-image: url("../Images/Prestine\ Renovations\ Photo\ 7\ \(Contacts\ Us\).jpg");
+    background-position:top;
+    background-attachment:fixed;
+    
     
 }
 
@@ -102,8 +106,9 @@ nav {
 }
 
 #hero-section-contact {
-    background-color:deepskyblue;
+    /*background-color:deepskyblue;*/
     color: white;
+    
 
 }
 
@@ -145,6 +150,7 @@ nav {
     height: 250px;
     width: 300px;
     display: flex;
+    position: relative;
     align-items: center;
     font-size: 0.6rem;
     justify-content: center;
@@ -152,6 +158,15 @@ nav {
     color: white;
     padding: 1rem;
     text-align:center;
+    border-radius: 0.5rem;
+
+    transition-property: transform;
+    transition-duration: 1s;
+
+    &:hover {
+        transform: translateY(-50px) scale(120%);
+    }
+    
 }
 
 #contact-page-form {
