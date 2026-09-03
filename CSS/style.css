@@ -10,6 +10,7 @@
     --default-text-padding: 5rem;
     --navbar-height: 60px; /*this number was determined by trial and error*/
     --maroon-primary: rgb(208, 57, 57);
+    --maroon-very-light: rgb(255, 197, 197);
 
 }
 
@@ -80,7 +81,10 @@ nav {
     background-color: beige;
     padding: var(--default-text-padding);
     
-    
+    background-position:top;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -91,7 +95,7 @@ nav {
 
 
 #hero-section-services {
-    background-color: purple;
+    background-image: url("../Images/Prestine\ Renovations\ Photo\ 2.jpg");
     color: whitesmoke;
 
 }
@@ -109,8 +113,7 @@ nav {
     /*background-color:deepskyblue;*/
     color: white;
     background-image: url("../Images/Prestine\ Renovations\ Photo\ 7\ \(Contacts\ Us\).jpg");
-    background-position:top;
-    background-attachment:fixed;
+    
     
 
 }
@@ -147,6 +150,9 @@ nav {
     width: min(100%, 1920);
     margin: auto;
 
+    position: relative;
+    z-index: 0;
+
     background-image: url(../Images/Prestine\ Renovations\ Photo\ 5.jpg);
     background-position: top;
     background-size:cover;
@@ -156,7 +162,7 @@ nav {
     transition-property: filter;
     transition-duration: 0.5s;
 
-    &:has(:hover) .card:not(:hover){
+    &:has(:hover :not(.blur)) .card:not(:hover){
         filter: blur(10px);
     }
     
@@ -180,6 +186,8 @@ nav {
     transition-duration: 0.5s;
     border: 2px solid rgb(208, 57, 57);
 
+    user-select: none;
+
     &:hover {
         transform: translateY(-50px) scale(120%);
         background-color: white;
@@ -195,7 +203,8 @@ nav {
     padding: var(--default-text-padding);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem
+    gap: 1rem;
+
     
 }
 
@@ -204,9 +213,114 @@ nav {
     padding: 2rem;
     
     border-radius: 0.5rem;
+
+    transition-property: transform;
+    transition-duration: 0.5s;
+
+    background-color: white;
+
+    transition-property: background-color, transform;
+    transition-duration: 0.5s;
+
+    user-select: none;
     h1 {
         margin-bottom: 2rem;
+        color: var(--maroon-primary);
     }
+
+    &:hover {
+        transform: scale(110%);
+    }
+}
+
+#services-process {
+    padding: var(--default-text-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: var(--maroon-primary);
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        color: rgb(66, 4, 14);
+    }
+
+    & * {
+        width: 1000px;
+        
+    }
+}
+
+#book-consultation-call-to-action {
+    position: relative;
+    height: 50vh;
+    background-image: url("../Images/Prestine\ Renovations\ Photo\ 4\ \(Shaking\ hands\).jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 0;
+
+    color: white;
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    
+}
+
+.blur {
+        /*set position:reletative for it's parent element as well as z-index:0 in the same parent element*/
+
+        position:absolute;
+        
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(1rem);
+
+        z-index: -1;
+        inset: 0;
+    }
+
+.link-button {
+        text-align: center;
+        margin: 5px;
+        
+        color: red;
+        border-style: solid;
+        border-color: red;
+        border-width: 0.1rem;
+        border-radius: 5px;
+        
+        padding: 10px;
+        text-decoration: none;
+        background-color: white;
+        
+        transition-property: color, background-color;
+        transition-duration: 0.5s;
+        font-size: 1.5rem;
+        & :visited {
+            color: red;
+        }
+
+        &:hover {
+            background-color: red;
+            color: white;
+        }
 }
 
 #contact-page-form {
