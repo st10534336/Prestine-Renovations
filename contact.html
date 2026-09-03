@@ -20,40 +20,38 @@
     </header>
 
     <main class="container" style="display: flex; gap: 2rem; flex-direction: column;">
-        <div>
-            <h1>Book your Consultation now</h1>
-        
+        <div class="hero-section" id="hero-section-contact">
+            <h1 class="hero-section-header">Book your Consultation now</h1>
         </div>
         
         
-        <form action="">
-            <div>
+        <form action="" id="contact-page-form">
+            <div class="form-input-div">
                 <label for="name">Name: </label>
                 <input type="text" name="name" id="name" placeholder="enter your name">
-            </div>
+            </div> 
 
-            <div>
+            <div class="form-input-div">
                 <label for="surname">Surname: </label>
                 <input type="text" name="surname" id="surname" placeholder="enter your surname">
             </div>
 
-            <div>
+            <div class="form-input-div">
                 <label for="email">Email Address</label>
                 <input type="email" name="enail" id="email" placeholder="name@gmail.com">
             </div>
             
-            <div>
+            <div class="form-input-div">
                 <label for="budget">Budget:</label>
                 <select id="budget" name="plan">
                     <option value="small">A small budget within a range of R30000-R150000 (small cosmetic renovation changes)</option>
                     <option value="medium">A medium budget within a range of R150000 - R499999 (complete kitchen and bathroom overhaul)</option>
                     <option value="large">A large budget from R500000 (for structural changes to complete home renovations)</option>
                 </select>
-                <h4>do keep in mind what you can do with your budget varies depending on what you want to do, your budget is not restricted to our examples</h4>
-                <h4>but we only accept renovations with an intial budget of R30000+</h4>
+                <h4 id="budget-disclaimer">do keep in mind that what you can do with your budget varies depending on what you want to do, your budget is not restricted to our examples <br> but we only accept renovations with an intial budget of R30000+</h4>
             </div>
             
-            <div>
+            <div class="form-input-div">
                 <label for="typeOfRenovation">Type of renovation</label>
                 <select name="typeOfRenovation" id="typeOfRenovation">
                     <option value="cosmetic">Cosmetic Renovations (does not alter the structure of building)</option>
@@ -63,7 +61,7 @@
                 </select>
             </div>
             
-            <div>
+            <div class="form-input-div">
                 <label for="areaType">Type of Area</label>
                 <select name="areaType" id="areaType">
                     <option value="room">Bedroom/Living area</option>
@@ -74,7 +72,7 @@
                 </select>
             </div>
             
-            <div>
+            <div class="form-input-div">
                 <label for="IndoorOrOutdoor">Indoors Or Outdoors?</label>
                 <select name="indoorsOrOutdoors" id="indoorsOrOutdoors">
                     <option value="Indoors">Indoors</option>
@@ -82,36 +80,39 @@
                 </select>
             </div>
             
-            <button type="submit">Create Account</button>
+            <button type="submit" id="submit-button">Create Account</button>
 
         </form>
 
-        <div>
-            <h1>Our Contact Details</h1>
-        </div>
-        
-        <div>
-            <h2>Address</h2>
-            <h3>Head Office: 3 King Street, Industria South, BayVille, 2195</h3>
-        </div>
-
-        <div>
-            <h2>PO Box</h2>
-            <h3>Prestine Renovations</h3>
-            <h3>PO Box 1234</h3>
-            <h3>Bayville</h3>
-            <h3>2195</h3>
-        </div>
-
-        <div>
-            <h2>Email</h2>
-            <h3>prestinerenovations@gmail.com</h3>
-        </div>
-
-        <div>
-            <h2>Call us at:</h2>
-            <h3>Customer Service: 082 673 5783</h3>
-            <h3>Support Line: 082 527 9231</h3>
+        <div id="contact-details-section">
+            
+            <div>
+                <h1>Our Contact Details</h1>
+            </div>
+            
+            <div>
+                <h2>Address</h2>
+                <h3>Head Office: 3 King Street, Industria South, BayVille, 2195</h3>
+            </div>
+    
+            <div>
+                <h2>PO Box</h2>
+                <h3>Prestine Renovations</h3>
+                <h3>PO Box 1234</h3>
+                <h3>Bayville</h3>
+                <h3>2195</h3>
+            </div>
+    
+            <div>
+                <h2>Email</h2>
+                <h3>prestinerenovations@gmail.com</h3>
+            </div>
+    
+            <div>
+                <h2>Call us at:</h2>
+                <h3>Customer Service: 082 673 5783</h3>
+                <h3>Support Line: 082 527 9231</h3>
+            </div>
         </div>
     </main>
 
