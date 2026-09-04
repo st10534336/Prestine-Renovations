@@ -11,6 +11,7 @@
     --navbar-height: 60px; /*this number was determined by trial and error*/
     --maroon-primary: rgb(208, 57, 57);
     --maroon-very-light: rgb(255, 197, 197);
+    --maroon-font-dark: rgb(66, 4, 14);
 
 }
 
@@ -40,6 +41,7 @@ header {
     position: sticky;
     top: 0;
     height: 60px;
+    z-index: 1;
 }
 
 nav {
@@ -85,6 +87,9 @@ nav {
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
+
+    position: relative;
+    z-index: 0;
     
 }
 
@@ -101,12 +106,14 @@ nav {
 }
 
 #hero-section-about {
-    background-color: maroon;
+    background-image: url("../Images/Prestine\ Renovations\ Photo\ 1.jpg");
     color: white;
 
     & h1 {
-        color: gold;
+        color: var(--maroon-primary);
+        
     }
+
 }
 
 #hero-section-contact {
@@ -140,6 +147,114 @@ nav {
 
     & :nth-child(2) {
         color: crimson;
+    }
+}
+
+#our-story {
+    padding: var(--default-text-padding);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--maroon-primary);
+    color: white;
+    min-height: 70vh;
+    & * {
+        max-width: 1200px;
+    }
+    & h1 {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    & h3 {
+        color: var(--maroon-very-light);
+    }
+}
+
+
+#expectations {
+    padding: var(--default-text-padding);
+
+    background-image: url("../Images/Prestine\ Renovations\ Photo\ 6\ \(Planning\).jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(1rem);
+    & * {
+        max-width: 1200px;
+    }
+
+    & h1 {
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
+    & li {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+}
+
+#testimonial-container {
+    padding: var(--default-text-padding);
+    color: var(--maroon-primary);
+
+    display: flex;
+    flex-flow: column;
+    gap: 1.5rem;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    & h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.testimonial {
+    padding: 2rem;
+    max-width: min(1000px, 100%);
+    border: 1px solid var(--maroon-primary);
+    color: var(--maroon-font-dark);
+    border-radius: 1rem;
+
+    & span {
+        color: var(--maroon-primary);
+    }
+}
+
+#about-page-call-to-action {
+    
+    position: relative;
+    height: 50vh; 
+    background-image: url('../Images/Prestine\ Renovations\ Photo\ 3.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 0;
+
+    color: var(--maroon-primary);
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -248,7 +363,7 @@ nav {
     h2 {
         margin-bottom: 1rem;
         font-size: 1.25rem;
-        color: rgb(66, 4, 14);
+        color: var(--maroon-font-dark);
     }
 
     & * {
@@ -328,7 +443,7 @@ nav {
     flex-flow: column;
     padding: var(--default-text-padding);
     gap: 2rem;
-    background-color:cadetblue;
+    background-color:var(--maroon-primary);
     font-size: 1.5rem;
 
     
@@ -344,6 +459,8 @@ nav {
         & :nth-child(2) {
             width: max-content;
         }
+        
+        border: none;
 
         & input, select {
             width: min(10rem, 100%);
@@ -351,12 +468,17 @@ nav {
             padding: 1.2rem;
 
             &:focus-within {
-                outline: aquamarine 1px solid;
+                outline: var(--maroon-very-light) 1px solid;
 
             }
 
             border-radius: 0.5rem;
-        
+            border: none;
+        }
+
+        & select {
+            color: var(--maroon-font-dark);
+            border: none;
         }
 
 }
@@ -366,11 +488,14 @@ nav {
     width: max-content;
     padding: 1rem;
     font-size: 1.5rem;
-    background-color: rgb(67, 67, 235);
+    background-color: maroon;
     color: white;
+    border-radius: 0.5rem;
+    
+    border: none;
 
     &:hover {
-        color:  rgb(67, 67, 235);
+        color: maroon;
         background-color: white;
     }
 
