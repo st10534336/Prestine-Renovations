@@ -659,14 +659,16 @@ footer {
 
 .slide-in-animated-element {
     animation: slideIn;
-    animation-timeline: scroll();
+    animation-timeline: view();
 }
 
 @keyframes slideIn {
   from {
-    transform: translateX(-100px); /* Slides in from the left */
+    transform: translateX(-100px);
+    opacity: 50%;
   }
   to {
     transform: translateX(0);
+    opacity: 100%;
   }
 }
