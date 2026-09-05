@@ -64,3 +64,5 @@ Tavernier, R. 2019. White wooden framed glass window [image online]. Unsplash. A
 Tyler, T. 2020. Man in suit talking on phone at desk with laptop [image online]. Unsplash. Available at: https://unsplash.com/photos/man-in-suit-talking-on-phone-at-desk-with-laptop-NWT8Hya-_WQ [Accessed 12 August 2026].
 
 Vecteezy. 2026. Close-up of a painter's hand in a glove painting a wall with a roller [video online]. Available at: <https://www.vecteezy.com/video/76801062-close-up-of-a-painter-s-hand-in-a-glove-painting-a-wall-with-a-roller> [Accessed 3 September 2026].
+
+Stock Videos, 2024. Interior Design Of A Modern House | Free Stock Video. [video online] Available at: <https://www.youtube.com/watch?v=upVGN5oMSXU>[Accessed 5 September 2026]
