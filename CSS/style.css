@@ -189,7 +189,9 @@ nav {
 }
 
 #welcome-text {
-    font-size: 5rem;
+    font-size: 4rem;
+    overflow-wrap:break-word;
+    
 }
 
 #first-paragraph {
@@ -361,6 +363,7 @@ nav {
     color: var(--maroon-primary);
 
     h1 {
+        max-width: 1000px;
         padding: 0.5rem;
         font-size: 4rem;
         margin-bottom: 1rem;
@@ -455,6 +458,7 @@ nav {
     transition-duration: 0.5s;
 
     user-select: none;
+    color: var(--maroon-font-dark);
     h1 {
         margin-bottom: 2rem;
         color: var(--maroon-primary);
@@ -531,6 +535,13 @@ nav {
     width: min(100%, 1400px);
     padding: var(--default-text-padding);
     place-items: center;
+
+    transition-property: transform;
+    transition-duration: 0.5s;
+
+    &:has(:hover) .gallery-image-div:not(:hover) {
+        transform: scale(90%);
+    }
     
 
 }
@@ -541,6 +552,9 @@ nav {
     align-items: center;
     margin-bottom: 3rem;
     gap: 2rem;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    user-select: none;
     & img {
         /*width: 992px;*/
         /*height: 558px;*/
@@ -556,6 +570,9 @@ nav {
         text-align: center;
     }
     
+    &:hover {
+        transform: scale(110%);
+    }
 }
 
 .blur {
@@ -670,6 +687,8 @@ nav {
 
 #budget-disclaimer {
     font-size: 1rem;
+    color: var(--maroon-font-dark);
+    max-width: 700px;
 }
 
 #contact-details-section {
@@ -693,10 +712,21 @@ footer {
 
 .slide-in-animated-element {
     animation: slideIn;
-
     animation-timeline: view();
+    animation-range: cover;
+    animation-fill-mode: both;
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(-100px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 @media (max-width: 700px) {
     
@@ -715,15 +745,4 @@ footer {
         grid-template-columns: 1fr;
     }
     
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-100px);
-    opacity: 0.5;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
