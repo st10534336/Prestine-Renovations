@@ -35,21 +35,21 @@ Changelog:
 Website Responsiveness:
 --Desktop:
 
-    ![desktop responsiveness image 1](Images/desktop-1.png)
-    ![desktop responsiveness image 2](Images/desktop-2.png)
-    ![desktop responsiveness image 3](Images/desktop-3.png)
+![desktop responsiveness image 1](Images/desktop-1.png)
+![desktop responsiveness image 2](Images/desktop-2.png)
+![desktop responsiveness image 3](Images/desktop-3.png)
 
 --Tablet:
 
-    ![Tablet responsiveness image 1](Images/tablet-1.png)
-    ![Tablet responsiveness image 2](Images/tablet-2.png)
-    ![Tablet responsiveness image 3](Images/tablet-3.png)
+![Tablet responsiveness image 1](Images/tablet-1.png)
+![Tablet responsiveness image 2](Images/tablet-2.png)
+![Tablet responsiveness image 3](Images/tablet-3.png)
 
 --Mobile:
 
-    ![Mobile responsiveness image 1](Images/mobile-1.png)
-    ![Mobile responsiveness image 2](Images/mobile-2.png)
-    ![Mobile responsiveness image 3](Images/mobile-3.png)
+![Mobile responsiveness image 1](Images/mobile-1.png)
+![Mobile responsiveness image 2](Images/mobile-2.png)
+![Mobile responsiveness image 3](Images/mobile-3.png)
 
 References:
 
