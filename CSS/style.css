@@ -447,6 +447,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    width: min(1920px, 100%);
 
     
 }
@@ -738,7 +739,24 @@ footer {
   }
 }
 
-@media (max-width: 700px) {
+
+/*tablet*/
+@media (max-width: 1000px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    #welcome-text {
+        width: 100%;
+        font-size: 3rem;
+        text-align: center;
+    }
+    #service-card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*smartphone*/
+@media (max-width: 670px) {
     
     nav {
         flex-wrap: wrap;
