@@ -5,34 +5,55 @@ Student Number: ST10534336
 
 
 Project Overview:
-->Presine-Renovation
- |-> CSS
- |-> Documents
- |-> Images
- |-> JavaScript
+
+-> Presine-Renovation
+
+ |--> CSS
+ 
+ |--> Images
+
+ |--> JavaScript
+
  -> about.html
+
  -> contact.html
+
  -> gallery.html
+
  -> services.html
+
  -> README.md
 
-
+<br>
+<br>
     
 The goal of this website is to help a company by the name of Pristine Renovations gain more customers
 
+<br>
+<br>
 
+Features and Functionality:
 
-Features and Funtionality:
--This website will show customers what Prestine Renovation offers as a service, which of course is Renovation related services whether they are small to large renovations of varying budgets.
+-This website will show customers what Pristine Renovation offers as a service, which of course is Renovation related services whether they are small to large renovations of varying budgets.
+
 -It will have a page where users can book a consultation and fill out information in a form (may need javascript)
+
 -It will feature beautiful animations and transitions using the power of CSS
 
+<br>
+<br>
 
-Changelog:
+CHANGELOG:
+
 -began with structuring the website and adding the content plus the images required for the gallery to get an overall picture of what things will be on what page
+
 -added css to improve look of the website and give it character
 
+<br>
+<br>
+
 Website Responsiveness:
+
 --Desktop:
 
 ![desktop responsiveness image 1](Images/desktop-1.png)
@@ -50,6 +71,9 @@ Website Responsiveness:
 ![Mobile responsiveness image 1](Images/mobile-1.png)
 ![Mobile responsiveness image 2](Images/mobile-2.png)
 ![Mobile responsiveness image 3](Images/mobile-3.png)
+
+<br>
+<br>
 
 References:
 
