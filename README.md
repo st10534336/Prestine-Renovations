@@ -1,10 +1,15 @@
-Project Title: Prestine-Renovations
-
-Student Name: Frank TAGUEMKAM-TOKAM
-Student Number: ST10534336
 
 
-Project Overview:
+<div style=" gap:2px; display:flex; flex-flow:column;">
+    <h2 style="color: Gold">Project Title: Pristine-Renovations</h2>
+    <h4>Student Name: Frank TAGUEMKAM-TOKAM</h4>
+    <h4>Student Number: ST10534336</h4>
+</div>
+
+
+
+
+<h2 style="color: crimson">Project Overview</h2>
 
 -> Presine-Renovation
 
@@ -27,46 +32,50 @@ Project Overview:
 <br>
 <br>
     
+<h2 style="color: crimson">Website Goal</h2>
 The goal of this website is to help a company by the name of Pristine Renovations gain more customers
 
 <br>
 <br>
 
-Features and Functionality:
+<h2 style="color: crimson">Features and Functionality</h2>
 
--This website will show customers what Pristine Renovation offers as a service, which of course is Renovation related services whether they are small to large renovations of varying budgets.
+<ul style="gap: 1.5rem; display:flex; flex-flow:column;">
+    <li>This website will show customers what Pristine Renovation offers as a service, which of course is Renovation related services whether they are small to large renovations of varying budgets.</li>
+    <li>It will have a page where users can book a consultation and fill out information in a form (may need javascript)</li>
+    <li>It will feature beautiful animations and transitions using the power of CSS</li>
+</ul>
 
--It will have a page where users can book a consultation and fill out information in a form (may need javascript)
-
--It will feature beautiful animations and transitions using the power of CSS
-
-<br>
-<br>
-
-CHANGELOG:
-
--began with structuring the website and adding the content plus the images required for the gallery to get an overall picture of what things will be on what page
-
--added css to improve look of the website and give it character
 
 <br>
 <br>
 
-Website Responsiveness:
+<h2 style="color: crimson">CHANGELOG</h2>
 
---Desktop:
+<ul style="gap: 1.5rem; display:flex; flex-flow:column;">
+    <li>began with structuring the website and adding the content plus the images required for the gallery to get an overall picture of what things will be on what page</li>
+    <li>added css to improve look of the website and give it character</li>
+</ul>
+
+<br>
+<br>
+
+<h2 style="color: crimson;">Website Responsiveness</h2>
+
+<h4 style="color: pink;">--Desktop</h4>
 
 ![desktop responsiveness image 1](Images/desktop-1.png)
 ![desktop responsiveness image 2](Images/desktop-2.png)
 ![desktop responsiveness image 3](Images/desktop-3.png)
 
---Tablet:
+<h4 style="color: pink;">--Tablet</h4>
 
 ![Tablet responsiveness image 1](Images/tablet-1.png)
 ![Tablet responsiveness image 2](Images/tablet-2.png)
 ![Tablet responsiveness image 3](Images/tablet-3.png)
 
---Mobile:
+<h4 style="color: pink;">--Mobile</h4>
+
 
 ![Mobile responsiveness image 1](Images/mobile-1.png)
 ![Mobile responsiveness image 2](Images/mobile-2.png)
@@ -75,7 +84,8 @@ Website Responsiveness:
 <br>
 <br>
 
-References:
+<h2 style="color: crimson">References</h2>
+
 
 G., Q. 2020. People sitting on chairs in front of table [image online]. Unsplash. Available at: https://unsplash.com/photos/people-sitting-on-chairs-in-front-of-table-Qngdf0kgGB4 [Accessed 12 August 2026].
 
